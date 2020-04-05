@@ -2,7 +2,7 @@
 Detecting COVID-19 in CT or X-ray images with Tensorflow. This project is part of **Bangk!t Assignment 5 - First Machine Learning Project MLCC**. 
 
 ## About Bangk!t
-![Bangk!t](https://lh5.googleusercontent.com/2wEMAbeLiou3iIOA-YZbFeIWfwceEpfUVM5PQlnm8DEYVDF53_-0tij5Ujvq3h8MBkKWBjG2=w16383)
+![Bangk!t](bangkit.png)
 [Bangk!t](https://sites.google.com/view/bangkitacademy?pli=1) is a Google-led academy developed in collaboration with Gojek, Tokopedia, and Traveloka, designed to produce high-calibre, technical talent for world-class, Indonesian technology companies and startups. 
 
 ## Disclaimer
