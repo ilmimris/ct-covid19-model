@@ -27,7 +27,7 @@ import os
 ap = argparse.ArgumentParser()
 ap.add_argument("-d", "--dataset", required=True,
 	help="path to input dataset")
-ap.add_argument("-p", "--plot", type=str, default="plot.png",
+ap.add_argument("-p", "--plot", type=str, default="plot_VGG16.png",
 	help="path to output loss/accuracy plot")
 ap.add_argument("-m", "--model", type=str, default="covid19_VGG16.model",
 	help="path to output loss/accuracy plot")
