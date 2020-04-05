@@ -1,0 +1,123 @@
+2020-04-05 20:02:14.459957: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+[INFO] loading images...
+2020-04-05 20:02:29.401976: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2020-04-05 20:02:30.153262: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: GeForce 930MX computeCapability: 5.0
+coreClock: 1.0195GHz coreCount: 3 deviceMemorySize: 2.00GiB deviceMemoryBandwidth: 14.92GiB/s
+2020-04-05 20:02:30.161581: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-04-05 20:02:30.224762: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-04-05 20:02:30.316024: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-04-05 20:02:30.349261: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-04-05 20:02:30.432396: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-04-05 20:02:30.469620: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-04-05 20:02:30.581122: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-04-05 20:02:30.747016: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-04-05 20:02:30.753245: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2020-04-05 20:02:30.766709: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: GeForce 930MX computeCapability: 5.0
+coreClock: 1.0195GHz coreCount: 3 deviceMemorySize: 2.00GiB deviceMemoryBandwidth: 14.92GiB/s
+2020-04-05 20:02:30.909918: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-04-05 20:02:30.955187: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-04-05 20:02:31.000630: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-04-05 20:02:31.051026: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-04-05 20:02:31.099040: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-04-05 20:02:31.147858: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-04-05 20:02:31.198624: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-04-05 20:02:31.412375: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-04-05 20:07:40.884197: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-05 20:07:40.889507: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      0
+2020-04-05 20:07:40.892213: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 0:   N 
+2020-04-05 20:07:40.989609: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1377 MB memory) -> 
+physical GPU (device: 0, name: GeForce 930MX, pci bus id: 0000:01:00.0, compute capability: 5.0)
+Downloading data from https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5
+58892288/58889256 [==============================] - 1258s 21us/step
+[INFO] compiling model...
+[INFO] training head...
+WARNING:tensorflow:From train_VGG16_covid19.py:120: Model.fit_generator (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use Model.fit, which supports generators.
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to
+  ['...']
+Train for 19 steps, validate on 39 samples
+Epoch 1/25
+2020-04-05 20:28:46.685472: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-04-05 20:28:47.293445: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-04-05 20:28:48.821690: W tensorflow/stream_executor/gpu/redzone_allocator.cc:312] Internal: Invoking GPU asm compilation is supported on Cuda non-Windows platforms only
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2020-04-05 20:28:49.626276: W tensorflow/core/common_runtime/bfc_allocator.cc:243] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.28GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-05 20:28:50.837835: W tensorflow/core/common_runtime/bfc_allocator.cc:243] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.17GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-05 20:28:51.806221: W tensorflow/core/common_runtime/bfc_allocator.cc:243] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.14GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-05 20:28:52.836343: W tensorflow/core/common_runtime/bfc_allocator.cc:243] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.18GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+ 3/19 [===>..........................] - ETA: 46s - loss: 1.1192 - accuracy: 0.4583 2020-04-05 20:28:55.231404: W tensorflow/core/common_runtime/bfc_allocator.cc:243] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.13GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-05 20:28:56.117642: W tensorflow/core/common_runtime/bfc_allocator.cc:243] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.09GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-05 20:28:56.816966: W tensorflow/core/common_runtime/bfc_allocator.cc:243] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.10GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-05 20:28:57.505184: W tensorflow/core/common_runtime/bfc_allocator.cc:243] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.16GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+19/19 [==============================] - 23s 1s/step - loss: 0.8138 - accuracy: 0.4966 - val_loss: 0.4943 - val_accuracy: 0.8125
+Epoch 2/25
+19/19 [==============================] - 12s 646ms/step - loss: 0.5919 - accuracy: 0.6871 - val_loss: 0.4021 - val_accuracy: 0.9375
+Epoch 3/25
+19/19 [==============================] - 12s 646ms/step - loss: 0.4934 - accuracy: 0.8027 - val_loss: 0.3378 - val_accuracy: 0.9688
+Epoch 4/25
+19/19 [==============================] - 12s 646ms/step - loss: 0.4337 - accuracy: 0.8367 - val_loss: 0.2719 - val_accuracy: 0.9688
+Epoch 5/25
+19/19 [==============================] - 12s 645ms/step - loss: 0.3755 - accuracy: 0.8980 - val_loss: 0.2158 - val_accuracy: 0.9688
+Epoch 6/25
+19/19 [==============================] - 12s 648ms/step - loss: 0.2848 - accuracy: 0.9252 - val_loss: 0.1805 - val_accuracy: 0.9688
+Epoch 7/25
+19/19 [==============================] - 12s 647ms/step - loss: 0.2350 - accuracy: 0.9388 - val_loss: 0.1499 - val_accuracy: 0.9062
+Epoch 8/25
+19/19 [==============================] - 12s 645ms/step - loss: 0.2120 - accuracy: 0.9592 - val_loss: 0.1292 - val_accuracy: 0.9688
+Epoch 9/25
+19/19 [==============================] - 12s 647ms/step - loss: 0.1940 - accuracy: 0.9524 - val_loss: 0.1167 - val_accuracy: 0.9688
+Epoch 10/25
+19/19 [==============================] - 12s 648ms/step - loss: 0.1502 - accuracy: 0.9592 - val_loss: 0.0969 - val_accuracy: 0.9688
+Epoch 11/25
+19/19 [==============================] - 13s 663ms/step - loss: 0.1660 - accuracy: 0.9539 - val_loss: 0.0894 - val_accuracy: 0.9688
+Epoch 12/25
+19/19 [==============================] - 12s 647ms/step - loss: 0.1410 - accuracy: 0.9592 - val_loss: 0.0836 - val_accuracy: 0.9688
+Epoch 13/25
+19/19 [==============================] - 13s 663ms/step - loss: 0.1317 - accuracy: 0.9728 - val_loss: 0.0808 - val_accuracy: 0.9688
+Epoch 14/25
+19/19 [==============================] - 13s 661ms/step - loss: 0.1345 - accuracy: 0.9592 - val_loss: 0.0729 - val_accuracy: 0.9688
+Epoch 15/25
+19/19 [==============================] - 13s 662ms/step - loss: 0.1014 - accuracy: 0.9796 - val_loss: 0.0689 - val_accuracy: 0.9688
+Epoch 16/25
+19/19 [==============================] - 13s 661ms/step - loss: 0.0991 - accuracy: 0.9660 - val_loss: 0.0647 - val_accuracy: 0.9688
+Epoch 17/25
+19/19 [==============================] - 13s 662ms/step - loss: 0.0937 - accuracy: 0.9660 - val_loss: 0.0608 - val_accuracy: 0.9688
+Epoch 18/25
+19/19 [==============================] - 13s 679ms/step - loss: 0.0873 - accuracy: 0.9737 - val_loss: 0.0580 - val_accuracy: 0.9688
+Epoch 19/25
+19/19 [==============================] - 13s 662ms/step - loss: 0.0920 - accuracy: 0.9660 - val_loss: 0.0600 - val_accuracy: 0.9688
+Epoch 20/25
+19/19 [==============================] - 13s 664ms/step - loss: 0.0638 - accuracy: 0.9932 - val_loss: 0.0547 - val_accuracy: 0.9688
+Epoch 21/25
+19/19 [==============================] - 13s 662ms/step - loss: 0.0733 - accuracy: 0.9796 - val_loss: 0.0523 - val_accuracy: 0.9688
+Epoch 22/25
+19/19 [==============================] - 13s 664ms/step - loss: 0.0648 - accuracy: 0.9796 - val_loss: 0.0511 - val_accuracy: 0.9688
+Epoch 23/25
+19/19 [==============================] - 13s 663ms/step - loss: 0.0856 - accuracy: 0.9660 - val_loss: 0.0491 - val_accuracy: 0.9688
+Epoch 24/25
+19/19 [==============================] - 13s 663ms/step - loss: 0.0737 - accuracy: 0.9728 - val_loss: 0.0485 - val_accuracy: 0.9688
+Epoch 25/25
+19/19 [==============================] - 13s 664ms/step - loss: 0.0634 - accuracy: 0.9796 - val_loss: 0.0427 - val_accuracy: 0.9688
+[INFO] evaluating network...
+2020-04-05 20:34:11.329480: W tensorflow/core/common_runtime/bfc_allocator.cc:243] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.25GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-05 20:34:12.622546: W tensorflow/core/common_runtime/bfc_allocator.cc:243] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.16GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+              precision    recall  f1-score   support
+
+       covid       0.95      1.00      0.97        19
+      normal       1.00      0.95      0.97        20
+
+    accuracy                           0.97        39
+   macro avg       0.97      0.97      0.97        39
+weighted avg       0.98      0.97      0.97        39
+
+[[19  0]
+ [ 1 19]]
+acc: 0.9744
+sensitivity: 1.0000
+specificity: 0.9500
+[INFO] saving COVID-19 detector model...
