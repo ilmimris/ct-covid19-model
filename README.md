@@ -72,6 +72,7 @@ specificity: 0.9500
 ```
 
 **training history**
+
 ![COVID-19 vs Healthy (NORMAL)](plot_VGG16.png)
 
 
@@ -96,6 +97,7 @@ sensitivity: 1.0000
 specificity: 0.9500
 ```
 **training history**
+
 ![COVID-19 vs Healthy (NORMAL)](plot_VGG16_COVID_vs_OtherPneumonia.png)
 
 <!-- ### DenseNet121 Result
