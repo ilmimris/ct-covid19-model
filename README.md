@@ -42,6 +42,7 @@ In total, we have **194 images** contain 97 images positive COVID-19 and 97 imag
 - Transfer learning using **VGG16** (pretrained model *Imagenet*) 
 - Learning rate 0.001
 - Epoch 25
+- Batch Size 8
 - Adam Optimizer
 - Loss function Binary Crossentropy
 - Train 80% and test 20% of dataset
@@ -107,6 +108,10 @@ specificity: 0.9500
 
 - > **95% specificity** implying that patient **do not have COVID-19 (True Negative)**, this model could accurately identify them as “COVID-19 negative” for 95% of the time.
 
+## Hardware Specification
+- Intel(R) Core(TM) i7-8550 @ 1.8GHz
+- NVIDIA GeForce 930MX 2GB with CUDA 10.2
+- Memory 12GB of RAM DDR4
 
 ## Acknowledgement
 - Daniel Kermany and Kang Zhang and Michael Goldbaum
