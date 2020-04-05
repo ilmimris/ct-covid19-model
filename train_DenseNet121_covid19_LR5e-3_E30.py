@@ -1,5 +1,5 @@
 # USAGE
-# python train_DenseNet121_covid19.py --dataset dataset
+# python train_DenseNet121_covid19_LR5e-3_E30.py --dataset dataset
 
 # import the necessary packages
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
@@ -27,9 +27,9 @@ import os
 ap = argparse.ArgumentParser()
 ap.add_argument("-d", "--dataset", required=True,
 	help="path to input dataset")
-ap.add_argument("-p", "--plot", type=str, default="plot_DenseNet121.png",
+ap.add_argument("-p", "--plot", type=str, default="plot_DenseNet121_covid19_LR5e-3_E30.png",
 	help="path to output loss/accuracy plot")
-ap.add_argument("-m", "--model", type=str, default="covid19_DenseNet121.model",
+ap.add_argument("-m", "--model", type=str, default="covid19_DenseNet121_covid19_LR5e-3_E30.model",
 	help="path to output loss/accuracy plot")
 args = vars(ap.parse_args())
 
