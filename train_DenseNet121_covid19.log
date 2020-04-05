@@ -1,0 +1,113 @@
+2020-04-05 20:44:01.846757: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+[INFO] loading images...
+2020-04-05 20:44:11.670036: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2020-04-05 20:44:12.411145: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: GeForce 930MX computeCapability: 5.0
+coreClock: 1.0195GHz coreCount: 3 deviceMemorySize: 2.00GiB deviceMemoryBandwidth: 14.92GiB/s
+2020-04-05 20:44:12.420390: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-04-05 20:44:12.430063: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-04-05 20:44:12.449107: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-04-05 20:44:12.464032: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-04-05 20:44:12.483094: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-04-05 20:44:12.503896: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-04-05 20:44:12.532952: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-04-05 20:44:12.541070: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-04-05 20:44:12.559343: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2020-04-05 20:44:12.569028: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: GeForce 930MX computeCapability: 5.0
+coreClock: 1.0195GHz coreCount: 3 deviceMemorySize: 2.00GiB deviceMemoryBandwidth: 14.92GiB/s
+2020-04-05 20:44:12.675929: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-04-05 20:44:12.779259: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-04-05 20:44:12.784546: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-04-05 20:44:12.788978: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-04-05 20:44:12.902570: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-04-05 20:44:12.908502: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-04-05 20:44:13.022934: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-04-05 20:44:13.324892: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-04-05 20:44:16.098933: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-05 20:44:16.104277: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      0
+2020-04-05 20:44:16.107374: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 0:   N 
+2020-04-05 20:44:16.120937: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1377 MB memory) -> 
+physical GPU (device: 0, name: GeForce 930MX, pci bus id: 0000:01:00.0, compute capability: 5.0)
+Downloading data from https://github.com/keras-team/keras-applications/releases/download/densenet/densenet121_weights_tf_dim_ordering_tf_kernels_notop.h5
+29089792/29084464 [==============================] - 156s 5us/step
+[INFO] compiling model...
+[INFO] training head...
+WARNING:tensorflow:From train_DenseNet121_covid19.py:120: Model.fit_generator (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use Model.fit, which supports generators.
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to
+  ['...']
+Train for 19 steps, validate on 39 samples
+Epoch 1/25
+2020-04-05 20:47:05.395117: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-04-05 20:47:05.708370: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-04-05 20:47:06.536910: W tensorflow/stream_executor/gpu/redzone_allocator.cc:312] Internal: Invoking GPU asm compilation is supported on Cuda non-Windows platforms only
+Relying on driver to perform ptx compilation. This message will be only logged once.
+19/19 [==============================] - 23s 1s/step - loss: 0.7718 - accuracy: 0.7347 - val_loss: 0.3511 - val_accuracy: 0.8125
+Epoch 2/25
+19/19 [==============================] - 7s 377ms/step - loss: 0.2223 - accuracy: 0.9116 - val_loss: 0.2265 - val_accuracy: 0.8438
+Epoch 3/25
+19/19 [==============================] - 7s 377ms/step - loss: 0.1929 - accuracy: 0.9320 - val_loss: 0.2146 - val_accuracy: 0.9062
+Epoch 4/25
+19/19 [==============================] - 7s 377ms/step - loss: 0.1702 - accuracy: 0.9456 - val_loss: 0.1596 - val_accuracy: 0.9688
+Epoch 5/25
+19/19 [==============================] - 7s 377ms/step - loss: 0.1719 - accuracy: 0.9252 - val_loss: 0.3482 - val_accuracy: 0.8438
+Epoch 6/25
+19/19 [==============================] - 7s 378ms/step - loss: 0.1390 - accuracy: 0.9252 - val_loss: 0.2418 - val_accuracy: 0.8750
+Epoch 7/25
+19/19 [==============================] - 7s 376ms/step - loss: 0.0419 - accuracy: 0.9932 - val_loss: 0.2133 - val_accuracy: 0.9062
+Epoch 8/25
+19/19 [==============================] - 7s 378ms/step - loss: 0.0710 - accuracy: 0.9660 - val_loss: 0.1264 - val_accuracy: 0.9375
+Epoch 9/25
+19/19 [==============================] - 7s 378ms/step - loss: 0.0648 - accuracy: 0.9728 - val_loss: 0.3027 - val_accuracy: 0.8750
+Epoch 10/25
+19/19 [==============================] - 7s 378ms/step - loss: 0.1218 - accuracy: 0.9660 - val_loss: 0.0895 - val_accuracy: 0.9688
+Epoch 11/25
+19/19 [==============================] - 7s 377ms/step - loss: 0.0879 - accuracy: 0.9728 - val_loss: 0.1091 - val_accuracy: 0.9688
+Epoch 12/25
+19/19 [==============================] - 7s 377ms/step - loss: 0.0939 - accuracy: 0.9592 - val_loss: 0.2012 - val_accuracy: 0.9062
+Epoch 13/25
+19/19 [==============================] - 7s 376ms/step - loss: 0.0906 - accuracy: 0.9728 - val_loss: 0.1259 - val_accuracy: 0.9688
+Epoch 14/25
+19/19 [==============================] - 7s 392ms/step - loss: 0.0472 - accuracy: 0.9868 - val_loss: 0.1710 - val_accuracy: 0.9062
+Epoch 15/25
+19/19 [==============================] - 7s 385ms/step - loss: 0.0234 - accuracy: 0.9932 - val_loss: 0.3209 - val_accuracy: 0.8750
+Epoch 16/25
+19/19 [==============================] - 7s 384ms/step - loss: 0.0273 - accuracy: 0.9932 - val_loss: 0.2056 - val_accuracy: 0.9062
+Epoch 17/25
+19/19 [==============================] - 7s 381ms/step - loss: 0.0343 - accuracy: 0.9796 - val_loss: 0.3493 - val_accuracy: 0.8125
+Epoch 18/25
+19/19 [==============================] - 7s 378ms/step - loss: 0.0094 - accuracy: 1.0000 - val_loss: 0.2487 - val_accuracy: 0.9062
+Epoch 19/25
+19/19 [==============================] - 7s 384ms/step - loss: 0.0297 - accuracy: 0.9932 - val_loss: 0.2814 - val_accuracy: 0.9062
+Epoch 20/25
+19/19 [==============================] - 7s 378ms/step - loss: 0.0171 - accuracy: 1.0000 - val_loss: 0.2002 - val_accuracy: 0.9062
+Epoch 21/25
+19/19 [==============================] - 7s 382ms/step - loss: 0.0258 - accuracy: 0.9864 - val_loss: 0.2893 - val_accuracy: 0.9062
+Epoch 22/25
+19/19 [==============================] - 7s 377ms/step - loss: 0.0269 - accuracy: 0.9932 - val_loss: 0.3519 - val_accuracy: 0.8438
+Epoch 23/25
+19/19 [==============================] - 7s 375ms/step - loss: 0.0276 - accuracy: 0.9932 - val_loss: 0.2206 - val_accuracy: 0.9062
+Epoch 24/25
+19/19 [==============================] - 7s 378ms/step - loss: 0.0455 - accuracy: 0.9864 - val_loss: 1.0823 - val_accuracy: 0.5938
+Epoch 25/25
+19/19 [==============================] - 7s 379ms/step - loss: 0.0204 - accuracy: 0.9932 - val_loss: 0.6703 - val_accuracy: 0.6875
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+
+       covid       0.61      1.00      0.76        19
+      normal       1.00      0.40      0.57        20
+
+    accuracy                           0.69        39
+   macro avg       0.81      0.70      0.67        39
+weighted avg       0.81      0.69      0.66        39
+
+[[19  0]
+ [12  8]]
+acc: 0.6923
+sensitivity: 1.0000
+specificity: 0.4000
+[INFO] saving COVID-19 detector model...
