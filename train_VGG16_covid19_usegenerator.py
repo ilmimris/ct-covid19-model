@@ -3,6 +3,7 @@
 
 # import the necessary packages
 import tensorflow as tf
+import tensorflowjs as tfjs
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.applications import VGG16
 from tensorflow.keras.layers import AveragePooling2D
@@ -42,6 +43,7 @@ DATASET_PATH=args["dataset"]
 TEST_PATH=args["testpath"]
 BATCH_SIZE = 8
 IMAGE_SIZE=(224,224)
+tfjs_target_dir='./tfjs'
 
 # grab the list of images in our dataset directory, then initialize
 # the list of data (i.e., images) and class images
@@ -130,6 +132,7 @@ H = model.fit_generator(
 	validation_steps=valid_batches.n // BATCH_SIZE,
 	epochs=EPOCHS,
 	callbacks=[callbacks])
+tfjs.converters.save_keras_model(model, tfjs_target_dir)
 
 # make predictions on the testing set
 print("[INFO] evaluating network...")
